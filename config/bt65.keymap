@@ -30,8 +30,8 @@
 				// |  CTL  |  WIN  |  ALT  |            SPACE               | ALT | 1    |  MENU| LEFT |  DOWN    | RIGHT	|
 				// ------------------------------------------------------------------------------------------------------------
 			bindings = <
-				&kp ESC  as(N1) as(N2) as(N3) as(N4) as(N5) as(N6) as(N7) as(N8) as(N9) as(N0) as(MINUS) as(EQUAL)	&kp BKSP &kp DEL
-				&kp TAB  as(Q)  as(W)  as(E)  as(R)  as(T)  as(Y)  as(U)  as(I)  as(O)  as(P)  as(LBKT)  as(RBKT)  	as(BSLH) &kp INS
+				&kp ESC  AS(N1) AS(N2) AS(N3) AS(N4) AS(N5) AS(N6) AS(N7) AS(N8) AS(N9) AS(N0) AS(MINUS) AS(EQUAL)	&kp BKSP &kp DEL
+				&kp TAB  AS(Q)  as(W)  as(E)  as(R)  as(T)  as(Y)  as(U)  as(I)  as(O)  as(P)  as(LBKT)  as(RBKT)  	as(BSLH) &kp INS
 				&kp CLCK as(A)  as(S)  as(D)  as(F)  as(G)  as(H)  as(J)  as(K)  as(L)  as(SEMI) as(SQT)		&kp RET  &kp PG_UP
 				&kp LSHFT as(Z) as(X)  as(C)  as(V)  as(B)  as(N)  as(M)  as(COMMA) as(DOT) as(FSLH)  &kp RSHFT		&kp UP &kp PG_DN
 				&kp LCTRL &kp LGUI &kp LALT            &kp SPACE                          &kp RALT  &mo 1 &kp RCTRL &kp LEFT &kp DOWN &kp RIGHT
