@@ -7,6 +7,17 @@
 
 
 / {
+	behaviors {
+		as: auto_shift {
+			compatible = "zmk,behavior-hold-tap";
+			label = "AUTO_SHIFT";
+			#binding-cells = <2>;
+			tapping_term_ms = <135>;
+			quick_tap_ms = <0>;
+			flavor = "tap-preferred";
+			bindings = <&kp>, <&kp>;
+		};
+	};
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -20,10 +31,10 @@
 				// ------------------------------------------------------------------------------------------------------------
 			bindings = <
 
-				&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp  N8   &kp  N9   &kp N0 &kp MINUS &kp EQUAL &kp BKSP &kp DEL
-				&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp  I    &kp  O  &kp  P   &kp LBKT &kp RBKT  	&kp BSLH &kp INS
-				&kp CLCK  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp  K    &kp  L  &kp SEMI &kp SQT           	&kp RET &kp PG_UP
-				&kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH   &kp RSHFT &kp UP &kp PG_DN
+				&kp ESC  as(N1) as(N2) as(N3) as(N4) as(N5) as(N6) as(N70 as(N8) as(N9) as(N0) as(MINUS) as(EQUAL)	&kp BKSP &kp DEL
+				&kp TAB  as(Q)  as(W)  as(E)  as(R)  as(T)  as(Y)  as(U)  as(I)  as(O)  as(P)  as(LBKT)  as(RBKT)  	as(BSLH) &kp INS
+				&kp CLCK as(A)  as(S)  as(D)  as(F)  as(G)  as(H)  as(J)  as(K)  as(L)  as(SEMI) as(SQT)		&kp RET  &kp PG_UP
+				&kp LSHFT as(Z) as(X)  as(C)  as(V)  as(B)  as(N)  as(M)  as(COMMA) as(DOT) as(FSLH)  &kp RSHFT		&kp UP &kp PG_DN
 				&kp LCTRL &kp LGUI &kp LALT            &kp SPACE                          &kp RALT  &mo 1 &kp RCTRL &kp LEFT &kp DOWN &kp RIGHT
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
