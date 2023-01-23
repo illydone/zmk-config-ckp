@@ -31,7 +31,7 @@
 				// ------------------------------------------------------------------------------------------------------------
 			bindings = <
 
-				&kp ESC  as(N1) as(N2) as(N3) as(N4) as(N5) as(N6) as(N70 as(N8) as(N9) as(N0) as(MINUS) as(EQUAL)	&kp BKSP &kp DEL
+				&kp ESC  as(N1) as(N2) as(N3) as(N4) as(N5) as(N6) as(N7) as(N8) as(N9) as(N0) as(MINUS) as(EQUAL)	&kp BKSP &kp DEL
 				&kp TAB  as(Q)  as(W)  as(E)  as(R)  as(T)  as(Y)  as(U)  as(I)  as(O)  as(P)  as(LBKT)  as(RBKT)  	as(BSLH) &kp INS
 				&kp CLCK as(A)  as(S)  as(D)  as(F)  as(G)  as(H)  as(J)  as(K)  as(L)  as(SEMI) as(SQT)		&kp RET  &kp PG_UP
 				&kp LSHFT as(Z) as(X)  as(C)  as(V)  as(B)  as(N)  as(M)  as(COMMA) as(DOT) as(FSLH)  &kp RSHFT		&kp UP &kp PG_DN
